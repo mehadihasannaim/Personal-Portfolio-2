@@ -1,0 +1,164 @@
+/* Animated Progress bar starts here */
+
+.skills-container{
+    padding-right: 45px;
+}
+
+
+.skills-container li{
+    list-style: none;
+    font-weight: bold;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(89, 86, 153, .5);
+    top: calc(100% + 8px);
+    width: 100%;
+    height: 10px;
+    left: 0;
+    border-radius: 1000px;
+}
+
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(86, 86, 153, 1);
+    top: calc(100% + 8px);
+    width: 0%;
+    height: 10px;
+    left: 0;
+    border-radius: 1000px;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+.skills-container li.html::after{
+    animation-name: html;
+}
+
+
+
+@keyframes html {
+
+    to{
+        width: 95%;
+        
+    }
+    
+}
+.skills-container li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+
+    to{
+        width: 90%;
+
+    }
+    
+}
+
+.skills-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap {
+
+    to{
+        width: 95%;
+
+    }
+    
+}
+
+.skills-container li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+
+    to{
+        width: 65%;
+
+    }
+    
+}
+
+.skills-container li.jquery::after{
+    animation-name: jquery;
+}
+@keyframes jquery {
+
+    to{
+        width: 40%;
+
+    }
+    
+}
+
+.skills-container li.wordpress::after{
+    animation-name: wordpress;
+}
+@keyframes wordpress {
+
+    to{
+        width: 90%;
+
+    }
+    
+}
+.skills-container li.php::after{
+    animation-name: php;
+}
+@keyframes php {
+
+    to{
+        width: 0%;
+
+    }
+    
+}
+
+.skills-container li.git::after{
+    animation-name: git;
+}
+@keyframes git {
+
+    to{
+        width: 75%;
+
+    }
+    
+}
+
+.skills-container li.mysql::after{
+    animation-name: mysql;
+}
+@keyframes mysql {
+
+    to{
+        width: 0%;
+
+    }
+    
+}
+
+/* Animated Progress bar ends here */
+
+.apache{
+    height: 340px;
+    width: 50%;
+}
+.it2{
+    height: 800px;
+    width: 50%;
+}
+
